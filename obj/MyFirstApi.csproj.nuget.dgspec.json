@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shahz\\MyFirstApi\\MyFirstApi.csproj": {}
+    "D:\\finance-backend\\MyFirstApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shahz\\MyFirstApi\\MyFirstApi.csproj": {
+    "D:\\finance-backend\\MyFirstApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahz\\MyFirstApi\\MyFirstApi.csproj",
+        "projectUniqueName": "D:\\finance-backend\\MyFirstApi.csproj",
         "projectName": "MyFirstApi",
-        "projectPath": "C:\\Users\\shahz\\MyFirstApi\\MyFirstApi.csproj",
-        "packagesPath": "C:\\Users\\shahz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahz\\MyFirstApi\\obj\\",
+        "projectPath": "D:\\finance-backend\\MyFirstApi.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\finance-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\shahz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
