@@ -25,6 +25,8 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
     return new MongoClient(settings.ConnectionString);
 });
 
+   builder.Services.AddScoped<ControlActivitiesService>();
+
 
 
 
@@ -40,14 +42,33 @@ if (app.Environment.IsDevelopment())
 app.MapControllers();
 
 app.Run();
-
 // Models & Settings
 public class MongoDbSettings
 {
     public string ConnectionString { get; set; } = string.Empty;
     public string DatabaseName { get; set; } = string.Empty;
 
+
+
+
+
     // 👇 add these
     public string ControlActivitiesCollectionName { get; set; } = "ControlActivities";
-  
+    public string ControlAssessmentsCollectionName { get; set; } = "ControlAssessments";
+    public string ControlEnvironmentsCollectionName { get; set; } = "ControlEnvironments";
+    public string FinancialStatementAssertionsCollectionName { get; set; } = "FinancialStatementAssertions";
+
+    public string GRCExceptionLogCollectionName { get; set; } = "GRCExceptionLogs";
+
+    public string InherentRiskCollectionName { get; set; } = "InherentRisks";
+    public string InternalAuditTestCollectionName { get; set; } = "InternalAuditTests";
+
+    public string OtherControlEnvironmentCollectionName { get; set; } = "OtherControlEnvironments";
+    public string OwnershipCollectionName { get; set; } = "Ownerships";
+    public string ProcessCollectionName { get; set; } = "Processes";
+    public string ResidualRiskAssessmentCollectionName { get; set; } = "ResidualRiskAssessments";
+
+    public string RiskResponseCollectionName { get; set; } = "RiskResponses";
+
+    public string SoxControlCollectionName { get; set; } = "SoxControls";
 }
