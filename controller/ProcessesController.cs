@@ -61,4 +61,15 @@ public class ProcessesController : ControllerBase
 
         return NoContent();
     }
+      public async Task<IActionResult> Delete(string id)
+    {
+        var existing = await _service.GetAsync(id);
+
+        if (existing is null)
+            return NotFound();
+
+        await _service.DeleteAsync(id);
+
+        return NoContent();
+    } 
 }

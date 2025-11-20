@@ -26,7 +26,19 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 });
 
    builder.Services.AddScoped<ControlActivitiesService>();
-
+   builder.Services.AddScoped<ControlAssessmentService>();
+    builder.Services.AddScoped<ControlEnvironmentService>();
+    builder.Services.AddScoped<FinancialStatementService>();
+    builder.Services.AddScoped<GCRExceptionService>();
+    builder.Services.AddScoped<InherentRiskService>();
+    builder.Services.AddScoped<InternalAuditService>();
+    builder.Services.AddScoped<OtherControlService>();
+    builder.Services.AddScoped<OwnershipService>();
+    builder.Services.AddScoped<ProcessesService>();
+    builder.Services.AddScoped<ResidualRiskService>();
+    builder.Services.AddScoped<RiskResponseService>();
+    builder.Services.AddScoped<SoxControlService>();
+    
 
 
 
